@@ -7,7 +7,7 @@ import Navbar from "./components/Navbar";
 function App() {
 
   return (
-    <main className="bg-[#eeeef1]">
+    <main className="bg-[#eeeef1] pt-10">
       <Navbar />
       <Banner />
       <h1 className="text-3xl">
