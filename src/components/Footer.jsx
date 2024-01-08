@@ -39,7 +39,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <figure className='hidden lg:block w-full'>
+                <figure className='hidden lg:flex justify-center w-full'>
                     <img src={footerImg} alt="" />
                 </figure>
             </footer>
