@@ -23,7 +23,7 @@ const Navbar = () => {
                         </svg>
                     </div>
                     <ul tabIndex={0} className="dropdown-content z-[2] menu p-2 shadow bg-base-100 rounded-box w-full mb-10">
-                        <li><a>Home</a></li>
+                        <li><a className="text-[#fd6110]">Home</a></li>
                         <li><a>Details</a></li>
                         <li><a>Category</a></li>
                         <li><a>My Favorites</a></li>

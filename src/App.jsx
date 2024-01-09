@@ -1,7 +1,5 @@
 import Banner from "./components/Banner"
 import Footer from "./components/Footer"
-import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu";
-import 'react-horizontal-scrolling-menu/dist/styles.css';
 import Navbar from "./components/Navbar";
 import PopularSection from "./components/PopularSection";
 import RecommendedSection from "./components/RecommendedSection";
@@ -18,14 +16,18 @@ function App() {
       console.log(data);
       setMenu(data.Items);
     })
-  }, [])
+  }, []);
+
+  const addMore = event => {
+    event.preventDefault();
+  }
 
   return (
     <main className="bg-[#eeeef1] pt-10">
       <Navbar />
       <Banner />
-      <PopularSection menu={menu} />
-      <RecommendedSection menu={menu} />
+      <PopularSection menu={menu} addMore={addMore} />
+      <RecommendedSection menu={menu} addMore={addMore} />
       <Footer />
     </main>
   )
