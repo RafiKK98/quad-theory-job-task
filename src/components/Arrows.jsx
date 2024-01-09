@@ -2,9 +2,9 @@
 import LeftArrow from "./LeftArrow";
 import RightArrow from "./RightArrow";
 
-const Arrows = ({ AddMore }) => (
+const Arrows = ({ addMoreBtn }) => (
     <div className="w-full flex justify-end items-center mb-2" >
-        <h2 className="text-[#fd6110] font-medium hover:cursor-pointer" onClick={AddMore}>Add More</h2>
+        <button className="text-[#fd6110] font-medium hover:cursor-pointer" onClick={addMoreBtn}>Add More</button>
         <div className="ml-2 flex gap-2">
             <LeftArrow /> <RightArrow />
         </div>

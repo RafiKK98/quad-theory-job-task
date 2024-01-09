@@ -18,16 +18,14 @@ function App() {
     })
   }, []);
 
-  const addMore = event => {
-    event.preventDefault();
-  }
+  
 
   return (
     <main className="bg-[#eeeef1] pt-10">
       <Navbar />
       <Banner />
-      <PopularSection menu={menu} addMore={addMore} />
-      <RecommendedSection menu={menu} addMore={addMore} />
+      <PopularSection menu={menu} setMenu={setMenu}/>
+      <RecommendedSection menu={menu} setMenu={setMenu}/>
       <Footer />
     </main>
   )
